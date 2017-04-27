@@ -19,12 +19,23 @@ body{
 	/*font-family: 'Source Code Pro', monospace;*/
 	 -webkit-animation: flicker 5s infinite;
 }
+#blackOverlay{
+	background-color:#000;
+	opacity:0.0;
+	position:absolute;
+	top:0;
+	width:100%;
+	height:100%;
+}
+
 .inarticlephoto{
 	text-align: center;
-
+	padding-top: 3%;
+	padding-bottom: 3%;
 }
 #ilr{
 	width: 100%;
+	/* -webkit-animation: graduallydark;*/
 }
 #b4{
 	width: 60%;
@@ -54,11 +65,11 @@ body{
 	padding-left: 10px;
 }
 .bodyparas{
-	margin-left: 18%;
-	margin-right: 18%;
+	margin-left: 20%;
+	margin-right: 20%;
 	font-family: 'Droid Serif', serif;
 	font-size: 110%;
-	color: #b7b7b7;
+	color: #E0E0E0;
 	line-height: 1.7em;
 }
 #headerimage{
@@ -71,6 +82,28 @@ body{
 #content{
 	padding-top: 46%;
 	
+}
+.caption{
+	width: 40%;
+	float: right;
+	font-style: italic;
+}
+.photocaption{
+	
+}
+.footer{
+	font-size: 110%;
+	font-style: italic;
+	text-align: center;
+}
+a{
+	padding-top: 5%;
+	padding-bottom: 5%;
+	color: #E0E0E0;
+	text-decoration: none;
+}
+a:hover{
+	color: #b04e4b;
 }
 
 /** TYPEWRITER ANIMATIONS: CREDITS TO http://codepen.io/thiagoteles/pen/ogoxLw/**/
@@ -105,7 +138,7 @@ body{
 }
 @keyframes typewriter{
   from{width: 0;}
-  to{width: 24em;}
+  to{width: 16.5em;}
 }
 @keyframes blinkTextCursor{
   from{border-right-color: rgba(255,255,255,.75);}
@@ -117,9 +150,28 @@ body{
 @-webkit-keyframes flicker
 {
 0% {opacity:0;}
-9% {opacity:0.2;}
+9% {opacity:0;}
 10% {opacity:.5;}
 13% {opacity:0;}
 20% {opacity:.5;}
 25% {opacity:1;}
+}
+
+
+@-webkit-keyframes graduallydark
+{
+0% {opacity:1;}
+25% {opacity:0.8;}
+50% {opacity:0.7;}
+75% {opacity:0.6;}
+100% {opacity: 0.5;}
+}
+
+@-webkit-keyframes graduallylight
+{
+0% {opacity:0.5;}
+25% {opacity:0.6;}
+50% {opacity:0.7;}
+75% {opacity:0.8;}
+100% {opacity: 1.0;}
 }
