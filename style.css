@@ -1,0 +1,125 @@
+body{
+	background-color: #000;
+	color: #fff;
+}
+.wrapper{
+	position: relative;
+}
+#maintitle{
+	text-align: left;
+	font-size: 230%;
+	font-family: 'Lora', serif;
+
+	/*margin-left: 58%;*/
+	position: relative;
+	width: 80%;
+	/*color: #56ff64;*/
+	color: #fff;
+	margin-top: 18%;
+	/*font-family: 'Source Code Pro', monospace;*/
+	 -webkit-animation: flicker 5s infinite;
+}
+.inarticlephoto{
+	text-align: center;
+
+}
+#ilr{
+	width: 100%;
+}
+#b4{
+	width: 60%;
+	height: auto;
+}
+
+#byline{
+	text-align: left;
+	/*font-family: 'Lora', serif;*/
+	margin-top: 8%;
+	/*color: #b7b7b7;*/
+	color: #56ff64;
+	margin-left: 0%;
+	font-family: 'Source Code Pro', monospace;
+}
+#lefttitle{
+	width: 55%;
+	float: left;
+}
+#righttitle{
+	width: 45%;
+	float: right;
+}
+#sunlogo{
+	width: 3%;
+	height: auto;
+	padding-left: 10px;
+}
+.bodyparas{
+	margin-left: 18%;
+	margin-right: 18%;
+	font-family: 'Droid Serif', serif;
+	font-size: 110%;
+	color: #b7b7b7;
+	line-height: 1.7em;
+}
+#headerimage{
+	height: auto;
+	margin-top: 20%;
+	padding: 20px;
+	margin-left: 10%;
+	width: 100%;
+}
+#content{
+	padding-top: 46%;
+	
+}
+
+/** TYPEWRITER ANIMATIONS: CREDITS TO http://codepen.io/thiagoteles/pen/ogoxLw/**/
+/* Google Fonts */
+@import url(http://fonts.googleapis.com/css?family=Anonymous+Pro);
+
+/* Global */
+
+body{
+ /* height: calc(100vh - 8em);*/
+  
+  background-color: rgb(25,25,25);  
+}
+.line-1{
+    position: relative;
+    top: 12%;  
+    width: 24em;
+    margin: 0 auto;
+    border-right: 2px solid rgba(255,255,255,.75);
+    font-size: 100%;
+    /*text-align: center;*/
+    text-align: left;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);    
+}
+
+/* Animation */
+.anim-typewriter{
+  animation: typewriter 4s steps(44) 1s 1 normal both,
+             blinkTextCursor 500ms steps(44) infinite normal;
+}
+@keyframes typewriter{
+  from{width: 0;}
+  to{width: 24em;}
+}
+@keyframes blinkTextCursor{
+  from{border-right-color: rgba(255,255,255,.75);}
+  to{border-right-color: transparent;}
+}
+
+
+/*flicker animation*/
+@-webkit-keyframes flicker
+{
+0% {opacity:0;}
+9% {opacity:0.2;}
+10% {opacity:.5;}
+13% {opacity:0;}
+20% {opacity:.5;}
+25% {opacity:1;}
+}
